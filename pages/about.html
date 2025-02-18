@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - NYC Singles Dance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        h1, h2, h3 {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-gradient {
+            background: linear-gradient(90deg, #3a3a3a, #222);
+            background-size: 200% 200%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+        @keyframes gradientAnimation {
+            0% { background-position: 0 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0 50%; }
+        }
+        a {
+            color: #bb86fc;
+        }
+        a:hover {
+            color: #e0e0e0;
+        }
+        .btn-primary {
+            background-color: #bb86fc;
+            color: #121212;
+        }
+        .btn-primary:hover {
+            background-color: #9259c9;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-gray-800 text-gray-300 py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold"><img src="/assets/images/logo.png" alt="Logo" class="h-11"></a>
+            <nav>
+                <a href="/pages/about.html" class="hover:text-gray-100 transition mr-4">About</a>
+                <a href="/pages/invest.html" class="hover:text-gray-100 transition mr-4">Invest</a>
+                <a href="/pages/contact.html" class="hover:text-gray-100 transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="py-16">
+        <section class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-6">About NYC Singles Dance</h1>
+            <p class="text-lg mb-8">NYC Singles Dance is redefining the way singles connect in New York City through innovative events and technology-driven experiences.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+                    <p>Creating authentic and meaningful connections for singles through curated events and cutting-edge technology.</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold mb-4">Our Vision</h3>
+                    <p>To become the go-to platform for singles looking for dynamic and enriching experiences across NYC.</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold mb-4">Our Commitment</h3>
+                    <p>We prioritize safety, inclusivity, and unparalleled event quality for all our attendees.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-black text-gray-300 py-8 border-t border-gray-700">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 NYC Singles Dance. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
